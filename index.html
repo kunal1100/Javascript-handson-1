@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.js">
+</head>
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
+    <h1 style="text-align: center;">
+        This is the Javascript handson 1.
+    </h1>
+    <br>
+    <p style="font-size: 20px; font-weight:bold">Question 1.</p>
+    <p style="font-size: 20px;">
+        Add two Numbers <br>
+        You are provided with two numbers A and B. Your task is to add these two numbers. <br>
+        Note: You have to complete AddTwoNumbers function. No need to take any input.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const AddTwoNumbers = (a,b) => {
+        return a+b
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 2.</p>
+    <p style="font-size: 20px;">
+        Find if the conditions are obeyed or not? <br>
+        You are given two number first as A and second as B and check if both conditions (A < 10 and A > B) are satisfied or not with the help of operators.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Is_Valid = (a,b) =>{
+        if(a<10 && a>b){
+        return 'true'
+    }
+    else{
+      return 'false'
+        }
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 3.</p>
+    <p style="font-size: 20px;">
+        Check the conditons <br>
+        You are given two numbers A and B. You need to do the following checks: <br>
+        1. if both are divisible by 10 console true. <br>
+        2. if both are not divisible by 10 console false. <br>
+        3. if one of them only is divisible by 10 console true. <br>
+        Use operator to do this.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Check = (A, B) => 
+    {
+        if(A%10===0 && B%10===0){
+            return 'true'
+        }
+        else if(A%10===0 || B%10==0){
+            return 'true'
+        }
+        else{
+            return 'false'
+        }
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 4.</p>
+    <p style="font-size: 20px;">
+        Find the first digit of a 4 digit number <br>
+        You are provided a four digit number N only. Your task is to print out the first digit of that number.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const First_Digit = (n) =>
+    {
+        var a=n/1000;
+        var b=parseInt(a);
+        return b;
+    };   
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 5.</p>
+    <p style="font-size: 20px;">
+        Find the last digit of a 4 digit number <br>
+        You are provided a four digit number N only. Your task is to print out the last digit of that number.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Last_Digit = (n) => {
+        var a = n%10
+        var b = parseInt(a)
+        return (b)
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 6.</p>
+    <p style="font-size: 20px;">
+        Find the remainder <br>
+        You are provided with two numbers A and B where A as  divisor and B as dividend.Your task is find the remainder.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Find_the_remainder = (a,b) => {
+        return(a%b)
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 7.</p>
+    <p style="font-size: 20px;">
+        Multipy two Numbers <br>
+        You are provided with two numbers A and B. Your task is to multiply these two numbers.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Multiply_two_number = (a,b) => {
+        return(a*b)
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 8.</p>
+    <p style="font-size: 20px;">
+        Marks Calculator <br>
+        Shyam has got his marks in three subjects as A, B, and C (out of 100).Write a program to calculate his total marks and his average.
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Sum = (A, B, C) => 
+    {
+        return(A+B+C)
+    };
+        
+    const Average = (A, B, C) => 
+    {
+        return((A+B+C)/3)
+    };
+    </pre>
+    <br>
+</body>
+</html>
